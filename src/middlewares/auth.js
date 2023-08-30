@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken');
 const userDataListModel = require('../models/user_data_list_model');
-const l = require('../log/main_logger');
 
 module.exports = (req, res, next) => {
     try {
