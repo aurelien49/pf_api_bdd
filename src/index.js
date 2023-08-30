@@ -2,7 +2,7 @@ const http = require('http');
 const app = require('./app');
 const database_connection = require("./db");
 require('dotenv').config();
-const PORT = process.env.PORT || 9001;
+const PORT = process.env.PORT || 5000;
 
 const server = http.createServer(app);
 

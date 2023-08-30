@@ -18,10 +18,12 @@ app.use(bodyParser.json());
 
 // imports des routes
 const objectRoutes = require('./routes/data_routes');
-const userRoutes = require('./routes/user_routes');
 
 app.use('/api/data', objectRoutes);
-app.use('/api/users', userRoutes);
+
+app.get('/', (req, res) => {
+    res.send("<h1>Express server started </h1>");
+});
 
 module.exports = app;
 
